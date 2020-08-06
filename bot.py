@@ -95,10 +95,10 @@ class InstagramBot:
                 '''Isto é o que comentei acima. Se for o sorteio da cozinha por exemplo, então comente utilizando a variável marcar_2_pessoas'''
                 if sorteio_da_vez == variavel_com_url_do_post:
                     self.type_like_a_person(marcar_2_pessoas, comment_input_box)
-                    print("Comentei: ", marcar_2_pessoas, " no post: ", sorteio_da_vez, "- Cozinha")
+                    print("Comentei: ", marcar_2_pessoas, " no post: ", sorteio_da_vez, "")
                 if sorteio_da_vez == variavel_com_url_do_post:
                     self.type_like_a_person(marcar_2_pessoas, comment_input_box)
-                    print("Comentei: ", marcar_2_pessoas, " no post: ", sorteio_da_vez, "- Guaiba")
+                    print("Comentei: ", marcar_2_pessoas, " no post: ", sorteio_da_vez, "")
                 time.sleep(random.randint(1, 15))
                 driver.find_element_by_xpath(
                     "//button[contains(text(), 'Publicar')]"
@@ -114,6 +114,6 @@ class InstagramBot:
 
 # Entre com o usuário e senha aqui
 '''Insira abaixo seu usuário e senha do instagram
-Dica amiga: Crie um instagram só para concorrer a sorteios... Não '''
+Dica amiga: Crie um instagram só para concorrer a sorteios... '''
 sandroLucasBot = InstagramBot(" seu usuario ", " sua senha ")
 sandroLucasBot.login()

@@ -107,7 +107,8 @@ class InstagramBot:
                 '''Aqui ele te informará quantas vezes já comentou o todo, desde o momento do start do script'''
                 print('Vezes comentadas:')
                 print(i)
-                time.sleep(random.randint(1, 15))
+                time.sleep(random.randint(1, 15)) 
+                #Sugestão: Mude o trecho acima para time.sleep(60) para fazer um comentário a cada minuto e diminuir a possibilidade de ser bloqueado. 
             except Exception as e:
                 print(e)
                 time.sleep(5)

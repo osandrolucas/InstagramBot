@@ -107,6 +107,8 @@ class InstagramBot:
                 '''Aqui ele te informará quantas vezes já comentou o todo, desde o momento do start do script'''
                 print('Vezes comentadas:')
                 print(i)
+                #A linha abaixo foi colocada a partir de uma sugestão no Youtube. Ela pode ser removida, caso você queira.
+                for i in range(1, 3): driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(random.randint(1, 15)) 
                 #Sugestão: Mude o trecho acima para time.sleep(60) para fazer um comentário a cada minuto e diminuir a possibilidade de ser bloqueado. 
             except Exception as e:

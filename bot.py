@@ -50,7 +50,7 @@ class InstagramBot:
             time.sleep(random.randint(1,3))
 
     def comente_nas_fotos_com_a_hashtag(self):
-        i = 0
+         a = 0
         while (1):
             ''' Aqui você coloca uma variável e atribui no valor o link do post da promoção. Por exemplo:
             # sorteio_cozinha = "https://www.instagram.com/ ......"
@@ -103,10 +103,10 @@ class InstagramBot:
                 driver.find_element_by_xpath(
                     "//button[contains(text(), 'Publicar')]"
                 ).click()
-                i += 1
+                a = a + 1
                 '''Aqui ele te informará quantas vezes já comentou o todo, desde o momento do start do script'''
                 print('Vezes comentadas:')
-                print(i)
+                print(a)
                 #A linha abaixo foi colocada a partir de uma sugestão no Youtube. Ela pode ser removida, caso você queira.
                 for i in range(1, 3): driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(random.randint(1, 15)) 
